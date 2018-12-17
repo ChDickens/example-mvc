@@ -35,7 +35,9 @@ $router = new Core\Router();
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
 $router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
 $router->add('users', ['controller' => 'Users', 'action' => 'index']);
-$router->add('posts/show', ['controller' => 'Posts', 'action' => 'show']);
+$router->add('users/show', ['controller' => 'Users', 'action' => 'index']);
+$router->add('posts/{id:\d+}/show', ['controller' => 'Posts', 'action' => 'show']);
+// $router->add('{controller}/{action}');
 
 $url = $_SERVER['QUERY_STRING'];
 $router->dispatch($url);

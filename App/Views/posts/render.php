@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Posts view show</h1>
+    <h1><?php echo $id ?></h1>
+    <h1><?php echo $title ?></h1>
+    <form action="/posts" method="POST">
+        <input type="text" name="asd">
+        <input type="submit" name="submit">
+    </form>
 </body>
 </html>

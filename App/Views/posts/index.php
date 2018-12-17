@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Posts view</h1>
+    <h1><?= $asd ?></h1>
 </body>
 </html>

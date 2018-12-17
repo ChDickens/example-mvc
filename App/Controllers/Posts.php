@@ -8,11 +8,17 @@ class Posts {
 
     public function index()
     {   
-        View::render('posts/index.php');
+        $asd = $_POST['asd'];
+        View::render('posts/index.php', [
+            'asd' => $asd
+        ]);
     }
 
-    public function show()
+    public function show($id)
     {
-        View::render('posts/show.php');
+        View::render('posts/render.php', [
+            'id' => $id,
+            'title' => 'title'
+        ]);
     }
 }
